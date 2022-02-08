@@ -35,7 +35,7 @@ function initMap() {
           const contentString =
             '<div id="content">' +
             `<p>Total Fatalities ${fatalInfo}</p>` +
-            `<p>Total Injurys ${injuryInfo}</p>` +
+            `<p>Total injuries ${injuryInfo}</p>` +
             "</div>";
 
           google.maps.event.addListener(marker, "click", function () {
@@ -72,7 +72,6 @@ function initMap() {
           });
           markers.push(marker);
         }
-        showData();
       })
       .catch((err) => {
         console.log(err);
